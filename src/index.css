@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.blue-to-white {
+  filter: invert(85%) sepia(100%) saturate(0%) hue-rotate(180deg);
+}
+.multi-line-truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  line-clamp: 2;
+  text-overflow: ellipsis; 
+  font-weight: 500;
+}
+.grid-section {
+  background-color: #e7e7e7;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 48.5vw)); /* Adjusted minmax */
+  gap: 1px;
+}
+
+.filter{
+  filter: invert(1);
+  color: black;
+}
+
+
+.sliding {
+  animation: slideAnimation 15s linear infinite; /* 10s = 5 slides (2s per slide) */
+}
+.sliding2 {
+  animation: slideAnimation2 20s linear infinite; /* 10s = 5 slides (2s per slide) */
+}
+
+.myshadow {
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.2);
+}
+.bestsellar{
+  background: rgb(0, 160, 152);
+}
+.tUxRFH .CmflSf {
+  top: 2px;
+  left: -16px;
+  z-index: 4;
+}
+.UzRoYO, .UzRoYO:before {
+  position: absolute;
+  height: 20px;
+}
+.UzRoYO {
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  top: 7px;
+  left: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 8px;
+  border-radius: 2px;
+} 
+.active-border {
+  border: 2px solid blue;
+}
